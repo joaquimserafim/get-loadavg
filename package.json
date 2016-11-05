@@ -1,0 +1,45 @@
+{
+  "name": "get-loadavg",
+  "version": "0.0.0",
+  "description": "returns the load average for the Unix-like systems but in an object",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "scripts": {
+    "coverage": "open coverage/lcov-report/index.html",
+    "coverage:check": "istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "test": "standard && istanbul cover tape test.js"
+  },
+  "author": "@JoaquimSerafim",
+  "license": "ISC",
+  "homepage": "https://github.com/joaquimserafim/get-loadavg",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joaquimserafim/get-loadavg.git"
+  },
+  "keywords": [
+    "loadavg",
+    "unix",
+    "linux",
+    "system",
+    "utils",
+    "cpu",
+    "performance"
+  ],
+  "engines": {
+    "node": ">=6.1"
+  },
+  "devDependencies": {
+    "istanbul": "0.4.5",
+    "pre-commit": "^1.1.3",
+    "standard": "8.5.0",
+    "tape": "4.6.2"
+  },
+  "pre-commit": [
+    "test",
+    "coverage:check"
+  ]
+}
