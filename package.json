@@ -1,6 +1,6 @@
 {
   "name": "get-loadavg",
-  "version": "0.0.0",
+  "version": "0.0.0-beta",
   "description": "returns the load average for the Unix-like systems but in an object",
   "main": "index.js",
   "files": [

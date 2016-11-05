@@ -15,6 +15,10 @@ require('os').loadavg = function loadavg () {
   return [9.19921875, 5.2197265625, 3.16796875]
 }
 
+require('os').cpus = function cpus () {
+  return [0, 1, 2, 3]
+}
+
 test('get-loadavg', (assert) => {
   const load1 = {
     one: {
