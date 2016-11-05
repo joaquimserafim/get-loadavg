@@ -23,7 +23,7 @@ returns the load average for the Unix-like systems but in an object
 ```js
 const getLoadAvg = require('get-loadavg')
 
-// let's suppose that the current loadavg is [9.19921875, 5.2197265625, 3.16796875]
+// let's suppose that the current loadavg is [9.19921875, 5.2197265625, 3.16796875] and we have 4 CPUs
 getLoadAvg()
 // should return
 {
